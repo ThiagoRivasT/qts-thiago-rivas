@@ -1,0 +1,61 @@
+{
+  "id": "0d340dc3-f483-435e-9e17-23ca91e5fc78",
+  "version": "2.0",
+  "name": "PESQUISA NO GOOGLE",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "188e3e99-9530-4658-88d2-269a69d0a490",
+    "name": "PESQUISA COM SUCESSO",
+    "commands": [{
+      "id": "040c8db5-4bfb-401e-a831-7b26f58c220b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fafa375-8d15-440c-82d9-6bc4cec960f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d38e67a3-0592-44cd-b49e-c92c9384ba75",
+      "comment": "",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29ebcfd3-8288-4733-b0a7-4d473f56cada",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "ETEC CAMARGO ARANHA"
+    }]
+  }],
+  "suites": [{
+    "id": "4770777c-b5de-4179-b64b-4dd407951417",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["188e3e99-9530-4658-88d2-269a69d0a490"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
